@@ -13,6 +13,7 @@ $config['DB_NAME'] = env('DB_NAME', 'ttrss');
 $config['DB_USER'] = env('DB_USER');
 $config['DB_PASS'] = env('DB_PASS');
 $config['PLUGINS'] = env('ENABLE_PLUGINS','auth_internal,fever');
+$config['_SKIP_SELF_URL_PATH_CHECKS'] = env('_SKIP_SELF_URL_PATH_CHECKS');
 
 if(dbcheckconn($config)){
     $pdo = dbconnect($config);
